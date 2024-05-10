@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "869361855488",
+    "project_id": "android-firebase-62c89",
+    "storage_bucket": "android-firebase-62c89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869361855488:android:e42f9c0ba3d4d52a76fce5",
+        "android_client_info": {
+          "package_name": "expos.cm.android_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8zq8j9I4dw3WTUa8VWqemFWbaJzA0zl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
