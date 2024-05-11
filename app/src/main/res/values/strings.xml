@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android_firebase</string>
+    <string name="default_web_client_id" translatable="false">android-firebase-62c89</string>
 </resources>

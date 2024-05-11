@@ -1,5 +1,4 @@
 package expos.cm.android_firebase
-
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,3 +17,4 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+

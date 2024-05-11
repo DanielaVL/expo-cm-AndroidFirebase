@@ -51,7 +51,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import io.devexpert.android_firebase.R
+import expos.cm.android_firebase.R
 import expos.cm.android_firebase.ui.navigation.Routes
 import expos.cm.android_firebase.ui.screens.db.ContactsScreen
 import expos.cm.android_firebase.ui.screens.db.NotesScreen
@@ -63,13 +63,9 @@ import expos.cm.android_firebase.utils.RealtimeManager
 fun HomeScreen(analytics: AnalyticsManager, auth: AuthManager, navigation: NavController) {
     analytics.logScreenView(screenName = Routes.Home.route)
     val navController = rememberNavController()
-
     val user = auth.getCurrentUser()
-
     var showDialog by remember { mutableStateOf(false) }
-
     val context = LocalContext.current
-
     val onLogoutConfirmed: () -> Unit = {
         auth.signOut()
         navigation.navigate(Routes.Login.route) {

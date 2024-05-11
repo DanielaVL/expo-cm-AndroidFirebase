@@ -51,7 +51,6 @@ import expos.cm.android_firebase.utils.RealtimeManager
 @Composable
 fun ContactsScreen(realtime: RealtimeManager, authManager: AuthManager) {
     var showAddContactDialog by remember { mutableStateOf(false) }
-
     val contacts by realtime.getContactsFlow().collectAsState(emptyList())
 
     Scaffold(
@@ -63,7 +62,6 @@ fun ContactsScreen(realtime: RealtimeManager, authManager: AuthManager) {
             ) {
                 Icon(imageVector = Icons.Default.Add, contentDescription = "Add Contact")
             }
-
             if (showAddContactDialog) {
                 AddContactDialog(
                     onContactAdded = { contact ->
@@ -104,11 +102,9 @@ fun ContactsScreen(realtime: RealtimeManager, authManager: AuthManager) {
 @Composable
 fun ContactItem(contact: Contact, realtime: RealtimeManager) {
     var showDeleteContactDialog by remember { mutableStateOf(false) }
-
     val onDeleteContactConfirmed: () -> Unit = {
         realtime.deleteContact(contact.key ?: "")
     }
-
     if (showDeleteContactDialog) {
         DeleteContactDialog(
             onConfirmDelete = {

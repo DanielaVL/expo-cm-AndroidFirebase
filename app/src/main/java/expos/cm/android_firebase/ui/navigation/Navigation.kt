@@ -19,7 +19,6 @@ import expos.cm.android_firebase.utils.AuthManager
 fun Navigation(context: Context, navController: NavHostController = rememberNavController()) {
     var analytics: AnalyticsManager = AnalyticsManager(context)
     val authManager: AuthManager = AuthManager(context)
-
     val user: FirebaseUser? = authManager.getCurrentUser()
 
     Screen {

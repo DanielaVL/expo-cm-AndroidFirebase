@@ -12,7 +12,20 @@
           "package_name": "expos.cm.android_firebase"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "869361855488-7f37sqt66l7kr44tfujb19su8o5maf00.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "expos.cm.android_firebase",
+            "certificate_hash": "1b61149fed3cae4c6c81cb6a72d01989cc263458"
+          }
+        },
+        {
+          "client_id": "869361855488-4a70t136rg67u8o490daube9nhn4igs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyA8zq8j9I4dw3WTUa8VWqemFWbaJzA0zl8"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869361855488-4a70t136rg67u8o490daube9nhn4igs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

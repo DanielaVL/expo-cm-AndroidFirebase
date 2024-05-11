@@ -41,7 +41,6 @@ fun ForgotPasswordScreen(analytics: AnalyticsManager, auth: AuthManager, navigat
 
     val context = LocalContext.current
     var email by remember { mutableStateOf("") }
-
     val scope = rememberCoroutineScope()
 
     Column(

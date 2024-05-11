@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import io.devexpert.android_firebase.R
+import expos.cm.android_firebase.R
 import kotlinx.coroutines.tasks.await
 
 sealed class AuthRes<out T> {
